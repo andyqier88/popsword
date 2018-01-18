@@ -1,0 +1,1 @@
+var mediaURLData={"1381":"http:\/\/sp.4000020133.com/video/baimiao.mp4","1382":"http:\/\/sp.4000020133.com/video/baimiao.mp4"}

@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title>RECOMMEND COOL 100s <% title %></title>
+		<link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css" />
+		<link rel="stylesheet" type="text/css" href="../css/new.css"/>
+		<script type="text/javascript" src="http://api.map.baidu.com/api?key=&v=1.1&services=true"></script>
+	</head>
+	
+	<body>
+		<div id="loading">
+			<!--<div id="loading-center">
+				<div id="loading-center-absolute">
+					<div id="object"></div>
+				</div>
+			</div>-->
+			<img src="../images/loding.gif"/>
+		</div>
+		<div class="wapper">
+			<div class="navbar-header container">
+				<!--<button type="button" class="navbar-toggle ssuo" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="true">
+			        <span class="glyphicon glyphicon-search"></span>
+			    </button>-->
+			    <a class="navbar-brand" href="#"><img src="../images/logo.jpg"/></a>
+			</div>
+			<span class="button"><img id="dj" src="../images/dianji.gif"/></span>
+			<div class="cube">
+				<div class="div1">
+					<div class="div1_1">
+						<img class="btn1" src="../images/video.gif"/>
+					</div>
+					<div class="div1_2">
+						<img src="../images/1231.jpg"/>
+					</div>
+					<div class="div1_3">
+						<img class="ewm1" src="../images/2wm1.jpg"/>
+						<a href="tel:13020325645"><img src="../images/tel.jpg"/></a>  
+					</div>
+					<div class="div1_4">
+						<img src="../images/map.png"/>
+					</div>
+					<!--<div class="div1_5">5</div>
+					<div class="div1_6">6</div>-->
+				</div>
+			</div>
+			<div class="modal-dialog modal-sm login1" role="document">
+		      <div class="modal-content">
+		
+		        <div class="modal-header">
+		          <h4 class="modal-title" id="mySmallModalLabel">更多动能登录才能使用</h4>
+		        </div>
+		        <div class="modal-body">
+		          <span class="btn btn-primary sh">稍后登陆</span>
+		          <span class="btn btn-primary lj">立即登陆</span>
+		        </div>
+		      </div><!-- /.modal-content -->
+		    </div>
+			<div class="container btn-container">
+				<div class="row">
+					<!--<div  class="col-xs-4 col-sm-4">
+						<img class="dl" data-toggle="modal" data-target="login-modal" src="../images/btn1.png"/>
+					</div>-->
+					<div class="col-xs-4 col-sm-4">
+						<img class="gz" data-toggle="modal" data-target="login-modal" src="../images/btn2.png"/>
+					</div>
+					<!--<div class="col-xs-4 col-sm-4">
+						<img class="fx" data-toggle="modal" data-target="login-modal" src="../images/btn3.png"/>
+					</div>-->
+				</div>
+			</div>
+			<div class="modal fade bs-example-modal-sm login-modal" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel">
+				<div class="modal-dialog modal-sm" role="document">
+					<div class="modal-content">
+						<div class="container">
+							<img src="../images/logo.png"/>
+						</div>
+						<form class="navbar-form navbar-left" role="search">
+							<div class="row">
+								<div class="col-lg-6">
+									<div class="input-group">
+										<span class="input-group-addon">
+								       		<input type="checkbox" aria-label="..."  placeholder="手机号">
+								        </span>
+										<input type="text" class="form-control" aria-label="..." placeholder="手机号">
+									</div>
+								</div>
+								<div class="col-lg-6">
+									<div class="input-group">
+										<span class="input-group-addon">
+								        	<input type="radio" aria-label="..."  placeholder="密码">
+								        </span>
+										<input type="text" class="form-control" aria-label="..." placeholder="密码">
+									</div>
+								</div>
+							</div>
+							<p class="text-right">忘记密码？</p>
+							<button type="button" class="btn btn-primary btn-block">注册</button>
+							<button type="submit" class="btn btn-primary btn-block">登录</button>
+						</form>
+						<div class="container">
+							<span class="bar text-left"></span>&nbsp; 其他用户登录 &nbsp;<span class="bar text-right"></span>
+							<div class="row">
+								<div class="col-xs-4 col-sm-4">
+									<img src="../images/weixin.jpg"/>
+								</div>
+								<div class="col-xs-4 col-sm-4">
+									<img src="../images/weibo.jpg"/>
+								</div>
+								<div class="col-xs-4 col-sm-4">
+									<img src="../images/qq.jpg"/>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<nav class="footer">
+			  <div class="container">
+					<p class="text-center">RECOMMEND COOL 100<sup>sec</sup></p>
+			  </div>
+			</nav>
+			<div class="login">
+				<div class="login-modal modal fade bs-example-modal-sm in" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" style="display: block; padding-left: 0px;">
+				<div class="modal-dialog modal-sm" role="document">
+					<div class="modal-content">
+						<div class="container logo">
+							<img src="../images/logo.png">
+							<span class="x" aria-hidden="true">×</span>
+						</div>
+						<form class="navbar-form navbar-left" role="search" id="form" method="post">
+							<div class="row">
+								<div class="col-lg-6">
+									<div class="input-group">
+										<span class="input-group-addon">
+								       		<input type="checkbox" aria-label="..." placeholder="手机号" >
+								        </span>
+										<input type="text" class="form-control" aria-label="..." placeholder="手机号" name="name">
+									</div>
+								</div>
+								<div class="col-lg-6">
+									<div class="input-group">
+										<span class="input-group-addon">
+								        	<input type="radio" aria-label="..." placeholder="密码">
+								        </span>
+										<input type="text" class="form-control" aria-label="..." name="password" placeholder="密码">
+									</div>
+								</div>
+							</div>
+							<p class="text-right">忘记密码？</p>
+							<!-- /.row -->
+							<button type="button" class="btn btn-primary btn-block">注册</button>
+							<button type="submit" class="btn btn-primary btn-block" id="login_btn">登录</button>
+						</form>
+						<div class="container">
+							<span class="bar text-left"></span>&nbsp; 其他用户登录 &nbsp;<span class="bar text-right"></span>
+							<div class="row">
+								<div class="col-xs-4 col-sm-4">
+									<img src="../images/weixin.jpg">
+								</div>
+								<div class="col-xs-4 col-sm-4">
+									<img src="../images/weibo.jpg">
+								</div>
+								<div class="col-xs-4 col-sm-4">
+									<img src="../images/qq.jpg">
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+				<div class="modal-backdrop fade in"></div>
+			</div>
+			<div class="modal-dialog modal-sm login2" role="document">
+		      <div class="modal-content">
+		
+		        <div class="modal-header">
+		        	<h4>提示</h4>
+		          <h4 class="modal-title" id="mySmallModalLabel">搜索项目请登录</h4>
+		        </div>
+		        <div class="modal-body">
+		          <span class="btn btn-primary sh">稍后登陆</span>
+		          <span class="btn btn-primary lj">立即登陆</span>
+		        </div>
+		      </div><!-- /.modal-content -->
+		    </div>		
+			<!--<div class="video">
+				<video  width="100%" height="100%" src="http://baimiao.4000020133.com/%E5%A5%87%E5%9F%9F%E6%94%B9.mp4">
+					<source src="http://baimiao.4000020133.com/%E5%A5%87%E5%9F%9F%E6%94%B9.mp4" type="video/mp4">
+					<source src="http://baimiao.4000020133.com/%E5%A5%87%E5%9F%9F%E6%94%B9.ovg" type="video/ogg">
+					<source src="http://baimiao.4000020133.com/%E5%A5%87%E5%9F%9F%E6%94%B9.webm" type="video/webm">
+					<object width="" height="" type="application/x-shockwave-flash" data="myvideo.swf">
+						<param name="movie" value="myvideo.swf">
+						<param name="flashvars" value="autostart=true&amp;file=myvideo.swf">
+					</object>
+					当前浏览器不支持 video直接播放，点击这里下载视频： <a href="myvideo.webm">下载视频</a>
+				</video>
+				<div class="modal-backdrop fade in"></div>
+			</div>-->
+			<div class="mapcon">
+				<div class="map" id="dituContent"></div>
+				<div class="modal-backdrop fade in"></div>
+			</div>
+			<div class="ewmcon">
+				<div class="ewm"><img src="../images/qiyu.jpg" alt="二维码" /></div>
+				<div class="modal-backdrop fade in"></div>
+			</div>
+			<div class="intcon">
+				<div class="int">
+					<h3>公司简介</h3>
+					<p>百秒荐客</p>
+				</div>
+				<div class="modal-backdrop fade in"></div>
+			</div>
+			<div class="sharcon">
+				<div class="shar">
+					<div class="row">
+						<div class="col-xs-4 col-sm-4">
+							<img src="../images/qq.png"/>
+							<p>分享到手机QQ</p>
+						</div>
+						<div class="col-xs-4 col-sm-4">
+							<img src="../images/weixin.png"/>
+							<p>分享到微信</p>
+						</div>
+						<div class="col-xs-4 col-sm-4">
+							<img src="../images/qq_zone.png"/>
+							<p>分享到QQ空间</p>
+						</div>
+					</div>
+				</div>
+				<button class="btn fxbtn">取消</button>
+				<div class="modal-backdrop fade in"></div>
+			</div>
+			<!--html标签布局-->
+		</div>
+		<div class="liveplayer">
+		    <video src="http://baimiao.4000020133.com/%E5%A5%87%E5%9F%9F%E6%94%B9.mp4"
+		            controls>
+		    </video>
+		</div>
+		<script src="../js/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../js/mmd.videoplayer.min.1.0.0.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../js/map.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript" src="http://res.wx.qq.com/open/js/jweixin-1.2.0.js"></script>
+        <script type="text/javascript">
+			var videoPlayer = (function() {
+		    var $livePlayer = document.getElementsByClassName('liveplayer')[0];
+		    var $video = document.getElementsByTagName('video')[0];
+		    var $playBtn = document.getElementsByClassName('btn1')[0];
+		
+		    $playBtn.addEventListener('click', function() {
+		        $livePlayer.style.display = 'block';
+		        $video.style.display = 'block';
+		        $video.play();
+		    })
+		    $video.addEventListener("webkitfullscreenchange", function(e) {
+			    if (!document.webkitIsFullScreen) {
+			       //退出全屏关闭视频
+//			       alert(1);
+			    };
+			})
+		    $video.addEventListener('pause', function() {
+			    $livePlayer.style.display = 'none';
+			})
+		    $video.addEventListener('play', function() {
+			    $livePlayer.style.display = 'block';
+			})
+		})()
+		</script>
+		<script type="text/javascript">
+			$(function(){
+				var ww = $(document).width();
+				var w = $(".cube").width();
+				$(".cube").css("height",1.1*w);
+				if(ww>=400){
+					var dw = 0.83*w;
+				}else{
+					var dw = 0.888*w;
+				}
+				$(".div1_1").css("transform","rotatex(-5deg) translatez(" + dw/2 + "px)");
+				$(".div1_2").css("transform","rotatex(265deg) translatez(" + dw/2 + "px)");
+				$(".div1_3").css("transform","rotatex(175deg) translatez(" + dw/2 + "px)");
+				$(".div1_4").css("transform","rotatex(85deg) translatez(" + dw/2 + "px)");
+				$(".div1").css("transform"," rotateX(80deg) translatez(0)");
+                 var num = 1;
+                 $(".button").on("click",function() {
+                     num++;
+                     var a = num-10;
+                     $(".div1").css("transform"," rotateX("+(num*90-10)+"deg)");
+                 })
+//               $(".prev").on("click",function() {
+//                   num--;
+//                   $("ul").css("transform","scaleX(2.5) scaleY(1.5) rotateX("+num*85+"deg)");
+//               })
+			})
+			$(function() {
+				var ww = $(document).width();
+				var w = $(".cube").width();
+				$(".cube").css("height",1.1*w);
+				if(ww>=400){
+					var dw = 0.83*w;
+				}else{
+					var dw = 0.888*w;
+				}
+				$(".div1_1").css("transform","rotatex(-5deg) translatez(" + dw/2 + "px)");
+				$(".div1_2").css("transform","rotatex(265deg) translatez(" + dw/2 + "px)");
+				$(".div1_3").css("transform","rotatex(175deg) translatez(" + dw/2 + "px)");
+				$(".div1_4").css("transform","rotatex(85deg) translatez(" + dw/2 + "px)");
+				$(".div1").css("transform"," rotateX(80deg) translatez(0)");
+                 var num = 1;
+                 $(".button").on("click",function() {
+                     num++;
+                     var a = num-10;
+                     $(".div1").css("transform"," rotateX("+(num*90-10)+"deg)");
+                 })
+//               $(".prev").on("click",function() {
+//                   num--;
+//                   $("ul").css("transform","scaleX(2.5) scaleY(1.5) rotateX("+num*85+"deg)");
+//               })
+// 				$(".div1_1 img").on("click",function(){
+//				 	$(".video").fadeIn();
+//				 });
+				 $(".div1_2 img").on("click",function(){
+				 	$(".intcon").fadeIn();
+				 });
+				 $(".div1_3 .ewm1").on("click",function(){
+				 	$(".ewmcon").fadeIn();
+				 });
+				 $(".div1_4 img").on("click",function(){
+				 	$(".mapcon").fadeIn();
+				 });
+				 $(".gz,.lj").on("click",function(){
+				 	$(".login").fadeIn();
+				 	$(".login1").fadeOut();
+				 });
+				 $(".fx").on("click",function(){
+				 	$(".sharcon").slideDown();
+				 });
+				 $(".ssuo").on("click",function(){
+				 	$(".login2").slideDown();
+				 });
+				 $(".sh").on("click",function(){
+				 	$(".login1").fadeOut();
+				 	$(".login2").fadeOut();
+				 });
+				 $(".modal-backdrop,.x").on("click",function(){
+				 	$(".login").fadeOut();
+				 	$(".video").fadeOut();
+				 	$(".mapcon").fadeOut();
+				 	$(".ewmcon").fadeOut();
+				 	$(".intcon").fadeOut();
+				 	$(".sharcon").slideUp();
+				 });
+				 $(".dl").on("click",function(){
+				 	$(".login1").fadeIn();
+				 });
+				 $('video').bind('ended', function(){  
+			        $(".video").css("display","none");
+			    }) 
+            });
+		</script>
+    <script>
+      $("#login_btn").click((e)=>{
+        e.preventDefault()
+        var datas = {
+          name: $('input[name=name]').val(),
+					password: $('input[name=password]').val()
+        }
+        var datap = JSON.stringify(datas)
+        $.ajax({
+					url: "/api/signup",
+					type: "POST",
+          header:"application/x-www-form-urlencoded",
+          data: datap,
+					cache: false,
+					dataType: 'json',
+					success: function (msg) {
+						if (msg) {
+							console.log('登出成功')
+							// setTimeout(()=>{
+							// 	window.location.href = "/signout"
+							// },1500)	
+						}
+					},
+					error: function (error) {
+						console.log(error);
+					}
+				})
+      })
+    </script>
+		<script>
+          	// document.write("<scr"+"ipt src='fx.php?htmlurl="+location.href.replace(/&/g,'__')+"'></scr"+"ipt>")  
+          	$(function(){
+          		var w = $("#cubeTransition").css("width");
+				$("#cubeTransition").css("height",w);
+          	})	
+        </script>
+        <script type="text/javascript">
+        	document.onreadystatechange = loadingChange;//当页面加载状态改变的时候执行这个方法.    
+	        function loadingChange()     
+	        {     
+	            if(document.readyState == "complete"){//当页面加载状态为完全结束时进入     
+                     $('#loading').css("display","none"); 
+                     $('.wapper').css("visibility","visible"); 
+	            }     
+	        } 
+        </script>
+	
+  
+  
+  </body>
+
+</html>
+        
+        

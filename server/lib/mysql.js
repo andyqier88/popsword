@@ -38,6 +38,7 @@ let createTable = (sql) => {
 }
 
 createTable(users)
+console.log(createTable(users))
 // 查找用户
 let findUser = (name) => {
   var _sql = `select * from users where username="${name}"; `
