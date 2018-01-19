@@ -11,7 +11,8 @@ app.use(router.routes());
 exports.signup = async(ctx, next) => {
     // let postData = ctx.request.body
     // ctx.body = postData
-    console.log(this.request)
+    // console.log(this.request)
+    console.log(ctx.request.method)
     console.log(ctx.request.body)
         // console.log(ctx.request.body.name)
         // let name = ctx.req.body.name;

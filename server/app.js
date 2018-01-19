@@ -8,6 +8,7 @@ const views = require('koa-views')
 const MysqlStore = require('koa-mysql-session')
 const koaStatic = require('koa-static')
 
+app.use(bodyParser())
 let router = new Router()
 router.get('/index', async (ctx, next) => {
     await ctx.render('index',{
