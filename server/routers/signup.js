@@ -2,20 +2,18 @@ const Koa = require('koa');
 const fs = require('fs')
 const userModel = require('../lib/mysql.js');
 const app = new Koa()
-const Router = require('koa-router')
+const router = require('koa-router')()
 const bodyParser = require('koa-bodyparser')
-let router = new Router()
+// let router = new Router()
 app.use(bodyParser())
 app.use(router.routes());
-app.use(router.routes()).use(router.allowedMethods())
+// app.use(router.routes()).use(router.allowedMethods())
 router.get('/signup', async(ctx, next) => {
 	ctx.body = {
 		data: 'signup'
 	}
 	console.log(`ctx${ctx.body}`)
-
 })
-
 router.post('/api/signup', async(ctx, next) => {
 	// let postData = ctx.request.body
 	// ctx.body = postData
