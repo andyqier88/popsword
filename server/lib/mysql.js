@@ -1,4 +1,5 @@
 const mysql = require('mysql')
+
 const pool = mysql.createPool({
   host: 'localhost',
   user: 'root',
@@ -10,18 +11,16 @@ var query = (sql, val) => {
   return new Promise((resolve, reject) => {
     pool.getConnection((err, connection) => {
       connection.query('SELECT * FROM users', (error, results, fields) => {
-        if (error) {
-          return resolve(err)
-        }else {
-          connection.query(sql, val, (err, rows) => {
-            if (err) {
-              reject(err)
-            }else {
-              resolve(rows)
-            }
-            connection.release()
-          })
-        }
+        if (error)  return resolve(err)
+        connection.query(sql, val, (err, rows) => {
+          if (err) {
+            reject(err)
+          }else {
+            console.log(rows)
+            resolve(rows)
+          }
+          connection.release()
+        })
       })
     })
   })
@@ -44,4 +43,8 @@ let findUser = (name) => {
   var _sql = `select * from users where username="${name}"; `
   return query(_sql)
 }
-module.exports = {findUser}
+let findId = (id) => {
+  var _sql = `select * from users where id = '${id}'`
+  return query(_sql)
+}
+module.exports = {findUser,findId}
