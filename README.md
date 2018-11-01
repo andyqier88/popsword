@@ -1,2 +1,0 @@
-# popsword
-init popsword
