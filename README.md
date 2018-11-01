@@ -1,2 +1,2 @@
-# baimiao
-百秒
+# popsword
+init popsword
